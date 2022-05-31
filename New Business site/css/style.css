@@ -61,6 +61,19 @@ body {
     margin-right: 6rem;
     line-height: 1.2; }
 
+/*--------------------------------------- Sevices ----------------------------------*/
+.services {
+  grid-column: start 3 / start 9;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  align-items: center;
+  justify-items: center; }
+  .services__list {
+    list-style: none; }
+  .services__img {
+    width: 100%;
+    height: 25rem; }
+
 /*-----------------------------------   Header   --------------------------------*/
 .nav {
   grid-column: 1/-1; }

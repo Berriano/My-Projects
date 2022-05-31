@@ -1,0 +1,48 @@
+/*--------------------------------------- Sevices ----------------------------------*/
+
+
+.services {
+
+
+  grid-column: start 3 / start 9;
+
+  // background-color: #fff;
+
+
+  /// feature grid 
+
+
+  display: grid;
+
+
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+
+	align-items: center;
+
+	justify-items: center;
+
+
+		&__list{
+
+			list-style: none;
+
+
+		}
+
+
+
+		&__img{
+
+			width: 100%;
+			height: 25rem;
+	
+		}   
+
+
+  }
+
+
+
+
+
+
