@@ -1,0 +1,68 @@
+/*-------------------------------   Base file   ---------------------------------*/
+
+
+*,
+*::before,
+*::after {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+}
+
+
+html {
+
+  box-sizing: border-box;
+  font-size: 62.5%;
+	background-color: #fff;
+
+	z-index: -50;
+
+
+
+	
+}
+
+
+
+body {
+	
+	font-family: "lato", sans-serif;
+	box-shadow: $-box-sh-med;
+
+
+	
+}
+
+
+/// 						Main Grid									
+
+
+
+.container {
+	
+	background-color: $-color-primary;
+	
+	max-width: 150rem;
+
+  margin: 3rem auto;
+
+  display: grid;
+
+
+  grid-template-columns:repeat(10, [start] minmax(min-content, 15rem) [end]) ;
+
+
+	grid-template-rows: 1fr repeat(8, [start] minmax(min-content, 14rem) [end]);
+
+
+}
+
+
+.underline{
+
+
+  background-image: linear-gradient(transparent 6.2rem, $-color-accent-red-lightest 50%, $-color-accent-red 100%);
+}

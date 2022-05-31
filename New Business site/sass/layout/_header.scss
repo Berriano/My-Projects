@@ -1,0 +1,154 @@
+/*-----------------------------------   Header   --------------------------------*/
+
+
+.nav {
+
+
+  grid-column: 1/-1;
+
+
+
+  &__list {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 8.8rem;
+
+    margin-right: 12rem;
+    padding-top: 2.4rem;
+
+
+
+    font-size: $-font-med;
+
+    list-style: none;
+
+
+
+
+    &-link,
+    &-link:link,
+    &-link:visited {
+
+      color: $-color-secondary;
+      text-decoration: none;
+
+	
+			transition:all 2s;
+
+
+    }
+
+   
+    &-link:hover,
+    &-link:active {
+
+    
+  background-image: linear-gradient(transparent 2.2rem,$-color-accent-red-lightest 50%, $-color-accent-red 100%);
+
+
+
+
+
+    }
+
+
+
+    &-item {
+
+
+
+
+		}
+
+
+  }
+
+
+
+}
+
+
+
+
+.header {
+
+  grid-column: 1/-1;
+
+  grid-row: 2/3;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 6rem;
+	
+  height: 70vh;
+
+	margin-bottom: $-mgb-break-lg;
+	
+	
+	
+	
+  color: $-color-secondary;
+	
+	
+  &__text-box {
+
+		position: relative;
+		
+		flex: 0 0 55%;
+  
+
+
+
+  }
+
+
+
+  &__heading-primary {
+
+    font-size: $-font-xl;
+    color: inherit;
+
+    line-height: 1;
+    padding-left: 10rem;
+
+    margin-bottom: $-mgb-med;
+
+    z-index: 10;
+
+    position: relative;
+
+
+  }
+
+
+
+
+  &__paragraph {
+
+    font-size: 4rem;
+    color: inherit;
+    padding-left: 10rem;
+
+  }
+
+
+
+
+  &__img {
+
+    height: 53.5rem;
+    width: 100%;
+
+    flex:0 0 40%;
+
+
+
+  }
+
+
+}

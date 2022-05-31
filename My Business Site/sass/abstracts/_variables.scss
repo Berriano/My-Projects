@@ -1,0 +1,187 @@
+/*---------------------------------- Variables ----------------------------------*/
+
+
+//----- COLORS ------ //
+
+
+/// Primary
+
+
+$-color-primary:#3791ff;
+$-color-primary-1:#3283e6;
+$-color-primary-2:#4b9cff;
+
+$-color-primary-light:#4b9cff;
+$-color-primary-light-1:#5fa7ff;
+$-color-primary-light-2:#73b2ff;
+$-color-primary-light-3:#9bc8ff;
+$-color-primary-light-4:#c3deff;
+$-color-primary-light-5:#d7e9ff;
+
+
+$-color-primary-dark:#1c4980;
+$-color-primary-dark-1:#163a66;
+$-color-primary-dark-2:#215799;
+$-color-primary-dark-3:#2c74cc;
+
+
+/// text
+
+
+$-color-primary-text-lightest:#ebf4ff;
+$-color-primary-text-light:#9bc8ff;
+$-color-primary-text:#0b1d33;
+$-color-primary-text-dark:#1c4980;
+$-color-primary-text-darkest:#050e19;
+
+
+
+/// Secondary
+
+
+$-color-secondary:#38d9a9;
+$-color-secondary-1:#32c398;
+$-color-secondary-2:#4cddb2;
+
+
+$-color-secondary-light:#ebfbf6;
+$-color-secondary-light-1:#d7f7ee;
+$-color-secondary-light-2:#c3f4e5;
+$-color-secondary-light-3:#aff0dd;
+
+
+$-color-secondary-dark:#061611;
+$-color-secondary-dark-1:#0b2b22;
+$-color-secondary-dark-2:#114133;
+$-color-secondary-dark-3:#165744;
+
+
+/// text
+
+
+
+
+$-color-secondary-text-light:#ebfbf6;
+$-color-secondary-text:#114133;
+$-color-secondary-text-dark:#061611;
+
+
+
+
+/// Accent
+
+
+$-color-accent:#364fc7;
+$-color-accent-1:#2b3f9f;
+$-color-accent-2:#5e72d2;
+
+
+
+$-color-accent-light:#afb9e9;
+$-color-accent-light-1:#c3caee;
+
+$-color-accent-dark:#1b2864;
+$-color-accent-dark-1:#202f77;
+
+
+
+
+
+/// background colors
+
+
+
+$-color-bg-light:#e8f2ff36;
+$-color-bg-dark:#2c74cca5;
+
+
+
+
+/// shadows
+
+
+
+$-box-shadow-light: .5rem .5rem 6rem rgba(0,0,0, .2);
+$-box-shadow-med: .75rem .75rem 5rem rgba(0,0,0, .35);
+$-box-shadow-dark: 1rem 1rem 4rem rgba(0,0,0, .5);
+
+
+$-box-shadow-accent: 1.5px 1.5px 6px rgba(54, 78, 199, 0.5);
+$-box-shadow-accent-light: 1px 1px 4px rgba(54, 78, 199, 0.3);
+$-box-shadow-accent-dark:2px 2.5px 6px rgba(54, 78, 199, 0.718);
+
+
+/// margins
+
+
+
+
+$-mg-btm-xsm:1rem;
+$-mg-btm-sm:2rem;
+$-mg-btm-med:4rem;
+$-mg-btm-lg:6rem;
+$-mg-btm-xlg:8rem;
+
+
+
+
+
+/// font sizes
+
+
+
+$-font-tiny: 0.5rem;
+$-font-xsm: 1rem;
+$-font-sm:2rem;
+$-font-med:3.2rem;
+$-font-lg:6rem;
+$-font-xl:8.8rem;
+$-font-huge:14rem;
+$-font-heading:10rem;
+
+
+$-font-display:1.6rem;
+$-font-display-lg:2.4rem;
+
+
+
+
+/// helper classes
+
+
+
+
+
+.margin-btm-sm{	margin-bottom: var(--mg-btm-sm);}
+.margin-btm-med{	margin-bottom: var(--mg-btm-med);}
+
+
+
+
+
+
+//-------------------- custom vars ----------------- //
+
+
+
+
+//------- Margins ----------//
+
+
+
+///	to use margin-bottom: var(--mg-btm-sm);
+
+
+
+:root{
+	
+	
+	--mg-btm-sm: 0.5rem;
+	--mg-btm-med:4rem;
+	
+	
+	}
+
+
+	
+	

@@ -1,0 +1,12 @@
+/*---------------------------- About -------------------------*/
+
+.about{
+
+	height: 50rem;
+	background-color: $-color-primary;
+
+	grid-column: 1/-1;
+	grid-row: main-start 2 / main-start 3;
+
+
+}

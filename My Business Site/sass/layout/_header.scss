@@ -1,0 +1,130 @@
+/*-----------------------------------   Header   --------------------------------*/
+
+
+.header {
+
+
+  /// grid location
+
+
+  grid-row: header-start / header-end;
+
+  grid-column: col-start / col-end;
+
+  height: 85vh;
+
+  background-image: linear-gradient(to right bottom, $-color-bg-dark, $-color-primary-light-3), url(../img/myweb-cropped.png);
+
+  background-size: cover;
+
+  background-position: center;
+
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+
+  /// header grid
+
+
+  display: grid;
+
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, 1fr);
+
+
+
+  &__logo-box {
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    align-self: start;
+    justify-self: start;
+    padding: 2.4rem;
+
+  }
+
+
+  &__text-box {
+
+    grid-column: 1/ span 3;
+    grid-row: 2 / 3;
+
+    padding-left: 8rem;
+    border-radius: 5px;
+
+    margin-top: 2.4rem;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+
+
+    &-btn {
+
+      display: flex;
+      align-items: center;
+      gap: 6rem;
+    }
+
+  }
+
+  &__logo {
+
+    height: 9rem;
+    width: auto;
+
+
+  }
+
+  &__link:link,
+  &__link:visited {
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $-color-primary-dark-2;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    display: inline-block;
+    font-size:$-font-display;
+    font-weight: 600;
+    transition: all .2s;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+
+
+  }
+
+  &__link:hover,
+  &__link:active {
+
+    // background-color: $-color-primary-dark;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, .5);
+    transform: scale(1.1) translateY(-1px);
+
+
+
+  }
+
+  &__main-heading {
+
+    text-shadow: 2px 2px rgba(0, 0, 0, .2);
+    color: #fff;
+
+
+  }
+
+
+  &__secondary-heading {
+
+    text-shadow: 2px 2px rgba(0, 0, 0, .2);
+    color:#fff;
+
+
+  }
+
+
+
+
+}

@@ -1,0 +1,473 @@
+/*-------------------------------------- Cards --------------------------------*/
+
+.pricing {
+
+  grid-column: 2/12;
+
+
+  display: grid;
+
+  // grid-template-columns:repeat(11, 1fr);
+  grid-template-columns:repeat(11, minmax(max-content,1fr));
+	row-gap: 14rem;
+
+	align-items: center;
+
+	column-gap: 4rem;
+
+	position: relative;
+
+
+	&__tick{
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		height: 28rem;
+		width: 115%;
+
+		transform: rotateY(55deg) scale(0.8) translate(0,-60%);
+	}
+
+
+
+
+
+
+
+
+  &__heading {
+
+    grid-column: 1 / -1;
+
+    font-size: $-font-lg;
+
+    font-weight: 700;
+
+    text-align: center;
+
+    color: $-color-primary-text-dark;
+
+    letter-spacing: 1px;
+
+
+
+	
+
+	
+  }
+
+
+  & span {
+
+    color: $-color-accent-2;
+
+    font-weight: 800;
+
+  }
+
+	&__heading::after{
+
+
+		content:"";
+		position: absolute;
+		top: 7%;
+		right: 42%;
+
+		height: 1.9rem;
+		width: 16%;
+		background-image: linear-gradient(to top ,$-color-accent, #fff);
+
+		z-index: -20;
+
+
+	}
+
+
+
+}
+
+
+///  card grids
+
+
+.card-basic {
+
+  grid-row: 2/3;
+
+  grid-column: 2 /5;
+
+}
+
+
+
+.card-standard {
+
+  grid-row: 2/3;
+
+  grid-column:5/8;
+
+	position: relative;
+
+
+}
+
+
+
+
+
+.card-premium {
+
+  grid-row: 2/3;
+
+  grid-column: 8/11;
+
+
+
+}
+
+
+/// card styling
+
+
+.card {
+
+
+
+  -moz-perspective: 150rem;
+  perspective: 80rem;
+  height: 45rem;
+
+
+
+	
+	
+  display: grid;
+	
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+	
+	
+	
+	
+  &__heading {
+
+
+		text-align: center;
+
+    padding: 4rem;
+   
+		text-transform: uppercase;
+
+		margin-bottom: 5rem;		
+
+		background-image:linear-gradient(to right bottom,$-color-primary-light-2,$-color-primary-light-5);
+
+
+		
+		&-back{
+			
+			margin-bottom: 5rem;
+
+		}		
+		
+  }
+	
+
+	
+	
+  /////////////// rotation /////////////////////
+	
+	
+	
+
+  &__side {
+		
+
+    height: 45rem;
+		
+    box-shadow: $-box-shadow-light;
+    border-radius: 2rem;		
+		
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+
+    transition: all .8s ease;
+
+
+    backface-visibility: hidden;
+
+    overflow: hidden;
+
+
+
+    &-front {
+
+      background-color: #fff;
+
+      transform: rotateY(0);
+
+
+
+      &-basic {
+
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+
+      }
+
+      &-standard {
+
+
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+
+
+
+				&::after{
+
+					content: "Best Value";
+			
+					position: absolute;
+					top:4%;
+					right: -10%;
+					background-color: $-color-secondary;
+					transform: rotate(45deg);
+					padding: 1rem 3rem;
+					font-size: 1.6rem;
+					display: block;
+
+
+				}
+      }
+
+
+
+
+      &-premium {
+
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+
+      }
+
+    }
+
+
+
+
+    &-back { 
+
+
+      transform: rotateY(180deg);
+
+
+
+      &-basic {
+
+
+        grid-column: 1/2;
+
+        grid-row: 1/2;
+
+      }
+
+
+
+      &-standard {
+
+
+        grid-column: 1/2;
+
+        grid-row: 1/2;
+
+
+
+				&::after{
+
+					content: "Best Value";
+			
+					position: absolute;
+					top:4%;
+					right: -10%;
+					background-color: $-color-secondary;
+					transform: rotate(45deg);
+					padding: 1rem 3rem;
+					font-size: 1.6rem;
+				
+				}
+			
+
+      }
+
+
+      &-premium {
+
+
+        grid-column: 1/2;
+
+        grid-row: 1/2;
+
+      }
+
+    }
+
+  }
+
+
+
+
+
+  &:hover &__side-front {
+
+    transform: rotateY(-180deg);
+
+
+  }
+
+
+
+  &:hover &__side-back {
+
+    transform: rotateY(0);
+
+  }
+
+
+
+
+  ///////////////    end   /////////////////////
+
+
+
+
+  &__list {
+
+
+    list-style: none;
+
+    padding: 3rem;
+
+
+		display: flex;
+		flex-direction: column;
+		gap: 0.6rem;
+
+  }
+
+
+
+
+  &__list-item {
+
+
+    display: flex;
+
+    gap: 2.5rem;
+
+    align-items: center;
+
+    margin-bottom: $-mg-btm-sm;
+
+
+  }
+
+
+
+  &__icon {
+
+    height: 2rem;
+    width: 2rem;
+		fill: $-color-primary-dark;
+
+  }
+
+
+
+  &__text {
+
+		font-size: $-font-display;
+		color: $-color-primary-text-darkest;
+
+
+
+	}
+
+
+
+	&__cta{
+
+		text-align: center;
+
+	}
+
+
+	&__payment-price{
+
+
+		font-size: $-font-heading;
+
+		margin-bottom: 2rem;
+
+		color:$-color-primary-text-darkest;
+
+
+	}
+
+
+	&__payment{
+
+		font-size: $-font-med;
+		margin-bottom: $-mg-btm-sm;
+
+		
+		
+		&-sub{font-size: 1.2rem;
+			margin-bottom: $-mg-btm-med;
+
+		
+		}
+
+	}
+
+
+&__btn,
+&__btn:link,
+&__btn:visited{
+
+
+		background-color: $-color-accent;
+
+		padding: 1.2rem 2.4rem;
+
+		border-radius: 5px;
+
+		text-decoration: none;
+		color: #fff;
+
+		transition: all .2s;
+
+
+	}
+
+
+	&__btn:hover,
+	&__btn:active{
+
+		background-color: $-color-secondary;
+
+	  transform: scale(1.08) ;
+
+		font-size: $-font-display-lg;
+
+		color: $-color-accent;
+
+		font-weight: 600;
+
+	}
+
+}

@@ -1,0 +1,96 @@
+/*----------------------------- Feature  -------------------------*/
+
+
+.feature {
+
+
+  grid-column: col-main 2 / col-main 10;
+  grid-row: main-start 1 / main-start 2;
+
+  margin-top: 14.4rem;
+	margin-bottom: 16rem;
+
+
+
+
+  // background-color: #fff;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+
+
+	column-gap: 3rem;
+	row-gap: 4rem;
+
+
+
+
+
+
+
+
+
+	
+  &__box {
+		
+		display: grid;		
+		
+    grid-template-columns: min-content  1fr;		
+		grid-template-rows: 4rem max-content;
+		
+		column-gap: 2.5rem;
+	
+		row-gap: 1rem;
+
+		color: $-color-primary-text-dark;
+
+
+			
+
+
+  }
+
+  &__icon {
+
+    fill: $-color-primary-dark-3;
+
+    height: 3.5rem;
+    width: 3.5rem;
+
+    grid-row: 1 / span 2;
+
+    transform: translateY(-.75rem);
+
+
+
+
+  }
+
+
+  &__text {
+
+
+    font-size: $-font-display;
+
+		line-height: 1.6;
+
+		margin-bottom: $-mg-btm-sm;
+
+		margin-right: 2.4rem;
+
+
+
+	
+
+
+
+  }
+
+
+
+
+
+
+
+}

@@ -1,0 +1,59 @@
+/*-------------------------------   Base file   ---------------------------------*/
+
+
+*,
+*::before,
+*::after {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+}
+
+
+html {
+
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+	
+}
+
+
+
+body {	
+	
+	
+	
+	padding: 4.4rem ;
+	
+	
+  
+	
+}
+
+.container{
+	
+
+	max-width: 160rem;
+
+	margin: 0 auto;
+
+	display: grid;
+
+	grid-template-rows:[header-start] 90vh	[header-end] repeat(4,[main-start] min-content [main-end])[footer-start] 30vh [footer-end];
+
+	grid-template-columns: [col-start]  minmax(6rem,1fr) [main-start] repeat(10, [col-main] minmax(min-content, 14rem) [col-main-end]) [main-end]  minmax(6rem,1fr)[col-end];
+
+
+}
+
+
+.footer{
+
+	height:50rem;
+
+	grid-row: footer-start / footer-end;
+}
+
