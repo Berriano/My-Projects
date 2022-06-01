@@ -74,20 +74,20 @@ body {
 .card {
   -moz-perspective: 150rem;
   perspective: 80rem;
-  height: 40rem;
+  height: 36rem;
   display: grid; }
   .card__heading {
     background-image: linear-gradient(to bottom right, #ffa500, #ffd280);
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
-    padding: 4rem 0;
-    margin-bottom: 5rem; }
+    padding: 3.2rem 0;
+    margin-bottom: 6.4rem; }
     .card__heading-back {
       margin-bottom: 5rem; }
   .card__side {
-    height: 40rem;
+    height: 36rem;
     backface-visibility: hidden;
     overflow: hidden;
     transition: all 1s;
@@ -112,16 +112,44 @@ body {
     transform: rotateY(0); }
   .card__icon {
     height: 2rem;
-    width: 2rem; }
+    width: 2rem;
+    fill: #805300; }
   .card__list {
     padding: 0 2.4rem; }
     .card__list-item {
       display: flex;
       gap: 1.6rem;
       align-items: center;
-      margin-bottom: 2rem; }
+      margin-bottom: 1.6rem; }
   .card__text {
     font-size: 1.2rem; }
+  .card__payment {
+    font-size: 2.4rem;
+    font-weight: 200;
+    margin-bottom: 1rem; }
+    .card__payment-price {
+      font-size: 7.2rem;
+      font-weight: 400; }
+    .card__payment-sub {
+      font-size: 1.2rem;
+      margin-bottom: 3.2rem; }
+  .card__btn, .card__btn:link, .card__btn:visited {
+    background-image: linear-gradient(to bottom right, #ffa500, #ffd280);
+    padding: 1.2rem 2.4rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #0c3256;
+    transition: all .2s;
+    margin-bottom: 2rem; }
+  .card__btn:hover, .card__btn:active {
+    background-image: linear-gradient(to bottom right, #33e7d6, #ccf9f5);
+    font-size: 1.4rem;
+    color: #06192b;
+    font-weight: 400;
+    transform: translateY(5px); }
+
+.card__cta {
+  text-align: center; }
 
 /*--------------------------------------- Sevices ----------------------------------*/
 .services {
@@ -135,7 +163,7 @@ body {
   row-gap: 5rem; }
   .services__list {
     list-style: none;
-    padding: 4rem;
+    padding: 2rem;
     background-color: #fff;
     border: 2px solid #0c3256;
     border-radius: 2rem;
@@ -151,17 +179,29 @@ body {
       margin-bottom: 3.2rem;
       transform: skew(10deg); }
     .services__list-item {
-      transform: skew(10deg);
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding-left: 2rem;
+      margin-bottom: 1rem;
+      color: #001614;
+      transform: skew(10deg); }
+    .services__list-text {
       font-size: 1.2rem; }
   .services__img {
     width: 100%;
-    height: 30rem; }
+    height: 30rem;
+    align-self: flex-start; }
+  .services__icon {
+    height: 1.6rem;
+    width: 1.6rem; }
 
 /*-----------------------------------   Header   --------------------------------*/
 .nav {
   grid-column: 1/-1; }
   .nav__list {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     gap: 8.8rem;
     margin-right: 12rem;
@@ -171,10 +211,18 @@ body {
     list-style: none; }
     .nav__list-link, .nav__list-link:link, .nav__list-link:visited {
       color: #0c3256;
-      text-decoration: none;
-      transition: all 2s; }
-    .nav__list-link:hover, .nav__list-link:active {
-      background-image: linear-gradient(transparent 2.2rem, #fbc5c5 50%, #f03e3e 100%); }
+      text-decoration: none; }
+    .nav__list-link:hover:not(.nav__list-btn), .nav__list-link:active:not(.nav__list-btn) {
+      background-image: linear-gradient(transparent 1.6rem, #ffd280 50%, #ffa500 100%); }
+    .nav__list-btn, .nav__list-btn:link, .nav__list-btn:active {
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      transition: all .2s ease;
+      margin-left: -2rem; }
+    .nav__list-btn:hover {
+      transform: scale(1.1);
+      background-color: #ffd280; }
 
 .header {
   grid-column: 1/-1;

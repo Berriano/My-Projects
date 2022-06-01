@@ -1,108 +1,151 @@
 /*-----------------------------------   Header   --------------------------------*/
 
 
+
+
+///////  Nav  ///////
+
+
+
+
 .nav {
 
 
   grid-column: 1/-1;
 
-
-
+	
+	
+	
   &__list {
 
-    display: flex;
+		
+		display: flex;
 
+		align-items: center;
+		
     justify-content: flex-end;
-
+		
     gap: 8.8rem;
-
+		
+		
     margin-right: 12rem;
+		
     padding-top: 2.4rem;
-
-
-
+		
+		
+		
     font-size: $-font-display;
-
-		font-weight: 500;
-
+		
+    font-weight: 500;
+		
     list-style: none;
 
 
+		&-item{
 
+			// transition: all .2s;
+
+		}
+		
+		
+		
+
+		
 
     &-link,
     &-link:link,
     &-link:visited {
-
+			
       color: $-color-secondary;
+
       text-decoration: none;
 
-	
-			transition:all 2s;
-
-
-    }
-
-   
-    &-link:hover,
-    &-link:active {
-
-    
-  background-image: linear-gradient(transparent 2.2rem,$-color-accent-red-lightest 50%, $-color-accent-red 100%);
-
-
-
-
-
+			
     }
 
 
 
-    &-item {
+		
+    &-link:hover:not(.nav__list-btn),
+    &-link:active:not(.nav__list-btn) {
 
+			
+      background-image: linear-gradient(transparent 1.6rem, $-color-accent-orange-lightest 50%, $-color-accent-orange 100%);
+			
+    }
 
+		
+		
+    &-btn,
+    &-btn:link,
+    &-btn:active {
 
+			display: inline-block;
+			
+      padding:1rem 2rem;
+			
+			border-radius: 1rem;
 
-		}
+			transition: all .2s ease;
 
+			margin-left: -2rem;
 
+    }
+		
+		
+		
+		
+    &-btn:hover{
+
+				transform: scale(1.1);		
+			
+      background-color: $-color-accent-orange-lightest;
+			
+
+			
+    }
+		
   }
-
-
 
 }
 
 
 
 
-.header {
 
-  grid-column: 1/-1;
+/////////   header    ///////////
+
+
+
+
+.header {
+	
+	grid-column: 1/-1;
 
   grid-row: 2/3;
-
+	
   display: flex;
 
   align-items: center;
 
   gap: 6rem;
-	
+
   height: 70vh;
 
-	margin-bottom: $-mgb-break-lg;
-	
-	
-	
-	
+  margin-bottom: $-mgb-break-lg;
+
+
+
+
   color: $-color-secondary;
-	
-	
+
+
   &__text-box {
 
-		position: relative;
-		
-		flex: 0 0 55%;
-  
+    position: relative;
+
+    flex: 0 0 55%;
+
 
 
 
@@ -146,7 +189,7 @@
     height: 53.5rem;
     width: 100%;
 
-    flex:0 0 40%;
+    flex: 0 0 40%;
 
 
 

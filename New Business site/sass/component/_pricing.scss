@@ -21,170 +21,276 @@
 }
 
 
-  // .card-basic {}
+// .card-basic {}
 
 
 
 
 
-  .card {
-
-  
-
-    -moz-perspective: 150rem;
-    perspective: 80rem;
-    height: 40rem;
+.card {
 
 
 
-    display: grid;
+  -moz-perspective: 150rem;
+  perspective: 80rem;
+  height: 36rem;
 
 
 
-    &__heading {
+  display: grid;
 
 
-			background-image: linear-gradient(to bottom right, $-color-accent-orange, $-color-accent-orange-lightest);
 
-			font-size:$-font-xmed;
+  &__heading {
 
-			font-weight: 400;
-      text-align: center;
-			
-      text-transform: uppercase;
 
-      padding: 4rem 0;
+    background-image: linear-gradient(to bottom right, $-color-accent-orange, $-color-accent-orange-lightest);
+
+
+
+    font-size: $-font-med;
+
+    font-weight: 400;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    padding: 3.2rem 0;
+
+    margin-bottom: $-mgb-xl;
+
+
+
+
+
+    &-back {
 
       margin-bottom: 5rem;
 
-
-
-
-
-
-      &-back {
-
-        margin-bottom: 5rem;
-
-      }
-
     }
-
-
-    &__side {
-
-
-      height: 40rem;
-
-      backface-visibility: hidden;
-
-      overflow: hidden;
-
-      transition: all 1s;
-			border-radius: 2rem;		
-		
-			border-bottom-left-radius: 0;
-			border-bottom-right-radius: 0;
-	
-
-
-
-
-      &-front {
-
-        background-color: #fff;
-				
-        transform: rotateY(0);
-				
-				
-        &-basic, &-standard,&-premium {
-					
-					grid-column: 1/2;
-          grid-row: 1/2;
-					
-					
-        }
-				
-      }
-			
-			
-			
-      &-back {
-				
-				background-color: #fff;
-
-        transform: rotateY(180deg);
-
-
-        &-basic,&-standard, &-premium {
-
-          grid-column: 1/2;
-          grid-row: 1/2;
-
-        }
-
-      }
-
-
-
-
-
-    }
-
-
-		
-		&:hover &__side-front {
-
-			transform: rotateY(-180deg);
-	
-	
-		}
-	
-	
-	
-		&:hover &__side-back {
-	
-			transform: rotateY(0);
-	
-		}
-
-
-
-		&__icon{
-
-			height: 2rem;
-			width: 2rem;
-		}
-
-
-
-		&__list{
-
-			padding:0 2.4rem;
-
-			
-			&-item{
-				
-				display: flex;
-
-				gap: 1.6rem;
-
-				align-items: center;
-
-				margin-bottom: $-mgb-sm;
-
-
-
-			}
-		}
-
-		&__text{
-
-			font-size: $-font-sm;
-
-
-
-		}
 
   }
 
+
+  &__side {
+
+
+    height: 36rem;
+
+    backface-visibility: hidden;
+
+    overflow: hidden;
+
+    transition: all 1s;
+    border-radius: 2rem;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+
+
+
+
+    &-front {
+
+      background-color: #fff;
+
+      transform: rotateY(0);
+
+
+      &-basic,
+      &-standard,
+      &-premium {
+
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+
+      }
+
+    }
+
+
+
+    &-back {
+
+      background-color: #fff;
+
+      transform: rotateY(180deg);
+
+
+      &-basic,
+      &-standard,
+      &-premium {
+
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+      }
+
+    }
+
+
+
+
+
+  }
+
+
+
+  &:hover &__side-front {
+
+    transform: rotateY(-180deg);
+
+
+  }
+
+
+
+  &:hover &__side-back {
+
+    transform: rotateY(0);
+
+  }
+
+
+
+  &__icon {
+
+    height: 2rem;
+    width: 2rem;
+    fill: $-color-accent-orange-darkest;
+
+  }
+
+
+
+  &__list {
+
+    padding: 0 2.4rem;
+
+
+
+
+    &-item {
+
+      display: flex;
+
+      gap: 1.6rem;
+
+      align-items: center;
+
+      margin-bottom: 1.6rem;
+
+
+
+    }
+
+
+  }
+
+  &__text {
+
+    font-size: $-font-sm;
+
+
+
+  }
+
+
+  // &__list::after {
+
+  //   content: "";
+  //   display: block;
+
+  //   background-image: linear-gradient(to bottom right, $-color-accent-orange, $-color-accent-orange-lightest);
+
+  //   height: 16rem;
+
+
+
+
+  // }
+
+
+  &__payment {
+
+
+    font-size: $-font-med;
+
+    font-weight: 200;
+
+    margin-bottom: $-mgb-xsm;
+
+
+
+
+
+
+    &-price {
+
+
+      font-size: 7.2rem;
+      font-weight: 400;
+
+
+
+
+    }
+
+    &-sub {
+
+      font-size: $-font-sm;
+
+      margin-bottom: $-mgb-med;
+
+
+
+
+
+
+    }
+  }
+
+  &__btn,
+  &__btn:link,
+  &__btn:visited {
+
+
+    background-image: linear-gradient(to bottom right, $-color-accent-orange, $-color-accent-orange-lightest);
+    padding: 1.2rem 2.4rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: $-color-secondary;
+    transition: all .2s;
+
+		margin-bottom: $-mgb-sm;
+
+
+
+  }
+
+  &__btn:hover,
+  &__btn:active {
+
+		background-image: linear-gradient(to bottom right, $-color-primary, $-color-primary-light-1);
+   
+    font-size: 1.4rem;
+    color: $-color-secondary-1;
+    font-weight: 400;
+
+		transform:translateY(5px);
+
+
+  }
+
+}
+
+
+.card__cta {
+
+
+  text-align: center;
+
+}
