@@ -1,0 +1,105 @@
+/*-------------------------------- Animations ---------------------------------*/
+
+
+
+
+//////////           Animations        //////////
+
+
+
+
+
+
+@keyframes left-slidein {
+
+	
+  0% {
+		
+    transform: translate(0, -175px)
+  }
+
+
+	75%{
+
+		transform: translate(125rem, -175px)
+		
+	}
+	
+  100% {
+
+		transform: translate(125rem, -85px)
+		
+  }
+
+}
+
+
+
+
+
+
+@keyframes right-slidein {
+	
+
+  0% {
+
+    transform: translate(125rem, -300px)
+  }
+
+	
+	75%{
+
+		transform: translate(0, -300px)
+		
+	}
+	
+  100% {
+		
+		transform: translate(0, -390px)
+		
+  }
+
+
+}
+
+
+
+	
+	///////////    Class  Elements        ////////////
+	
+	
+	
+	
+	
+	.left-slider {
+	
+		height: .5rem;
+		width: 25rem;
+	
+		background-image: linear-gradient($-color-accent-red-lightest 50%, $-color-accent-red 90%, $-color-primary);
+	
+		animation: left-slidein 5s infinite;
+	
+		z-index: -20;
+	
+	
+	}
+	
+	
+	
+	
+	.right-slider {
+	
+		height: .5rem;
+		width: 25rem;
+	
+		background-image: linear-gradient($-color-accent-red-lightest 50%, $-color-accent-red 90%, $-color-primary);
+	
+		animation: right-slidein 5s infinite;
+	
+		z-index: -20;
+	
+	
+	}
+	
+	

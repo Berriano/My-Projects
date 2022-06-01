@@ -15,26 +15,22 @@
 html {
 
   box-sizing: border-box;
-  font-size: 62.5%;
+ 
 	background-color: #fff;
 
 	z-index: -50;
-
-
-
 	
 }
 
 
 
-body {
+body {	
 	
-	font-family: "Inter", sans-serif;
 	box-shadow: $-box-sh-med;
-
-
 	
 }
+
+
 
 
 /// 						Main Grid									
@@ -64,5 +60,5 @@ body {
 .underline{
 
 
-  background-image: linear-gradient(transparent 6.2rem, $-color-accent-red-lightest 50%, $-color-accent-red 100%);
+  background-image: linear-gradient(transparent 6.2rem, $-color-accent-red-lightest 50%, $-color-accent-red 90%, $-color-primary);
 }
