@@ -29,7 +29,7 @@
 
   .card {
 
-    // background-color: $-color-secondary-2;
+  
 
     -moz-perspective: 150rem;
     perspective: 80rem;
@@ -46,9 +46,9 @@
 
 			background-image: linear-gradient(to bottom right, $-color-accent-orange, $-color-accent-orange-lightest);
 
-			font-size: $-font-xmed;
+			font-size:$-font-xmed;
 
-			font-weight: 500;
+			font-weight: 400;
       text-align: center;
 			
       text-transform: uppercase;
@@ -154,6 +154,36 @@
 
 			height: 2rem;
 			width: 2rem;
+		}
+
+
+
+		&__list{
+
+			padding:0 2.4rem;
+
+			
+			&-item{
+				
+				display: flex;
+
+				gap: 1.6rem;
+
+				align-items: center;
+
+				margin-bottom: $-mgb-sm;
+
+
+
+			}
+		}
+
+		&__text{
+
+			font-size: $-font-sm;
+
+
+
 		}
 
   }

@@ -78,8 +78,8 @@ body {
   display: grid; }
   .card__heading {
     background-image: linear-gradient(to bottom right, #ffa500, #ffd280);
-    font-size: 3.6rem;
-    font-weight: 500;
+    font-size: 3rem;
+    font-weight: 400;
     text-align: center;
     text-transform: uppercase;
     padding: 4rem 0;
@@ -113,6 +113,15 @@ body {
   .card__icon {
     height: 2rem;
     width: 2rem; }
+  .card__list {
+    padding: 0 2.4rem; }
+    .card__list-item {
+      display: flex;
+      gap: 1.6rem;
+      align-items: center;
+      margin-bottom: 2rem; }
+  .card__text {
+    font-size: 1.2rem; }
 
 /*--------------------------------------- Sevices ----------------------------------*/
 .services {
