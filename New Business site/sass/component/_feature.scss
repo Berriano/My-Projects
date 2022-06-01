@@ -9,8 +9,6 @@
 
   grid-column: start 2/ start 10;
 
-  // background-color: #fff;
-
 
   /// feature grid 
 
@@ -26,6 +24,11 @@
 	padding: 0 3.2rem;
 
 	row-gap: 2rem;
+
+
+	margin-bottom: $-mgb-break-lg;
+
+
 
 
 
@@ -48,6 +51,8 @@
   }
 
 
+
+
   &__icon {
 
     transform: translateY(-1rem);
@@ -58,20 +63,18 @@
 
 		text-shadow: 2px 2px 2px black;
 
-
-
   }
+
+
+
 
   &__heading {
 
 
-		font-size: 2rem;
-		// margin-bottom: $-mgb-sm;
-
+		font-size: 2rem;	
 		letter-spacing: .1rem;
+
 	}
-
-
 
 
 
@@ -83,8 +86,8 @@
 		color: $-color-secondary;
 		margin-right:6rem;
 		line-height: 1.2;
+
+
 	}
-
-
 
 }
