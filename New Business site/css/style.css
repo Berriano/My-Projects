@@ -1,33 +1,59 @@
 /*---------------------------------- Variables -------------------------------*/
 /*-------------------------------- Animations ---------------------------------*/
-@keyframes left-slidein {
+@keyframes left__slidein-circle {
   0% {
-    transform: translate(0, -175px); }
+    transform: translate(0, -185px); }
   75% {
-    transform: translate(125rem, -175px); }
+    transform: translate(125rem, -185px); }
   100% {
-    transform: translate(125rem, -85px); } }
+    transform: translate(125rem, -105px); } }
 
-@keyframes right-slidein {
+@keyframes right__slidein-circle {
   0% {
-    transform: translate(125rem, -300px); }
+    transform: translate(125rem, -110px); }
   75% {
-    transform: translate(0, -300px); }
+    transform: translate(0, -110px); }
   100% {
-    transform: translate(0, -390px); } }
+    transform: translate(0, -190px); } }
 
-.left-slider {
+@keyframes right__slidein-straight {
+  0% {
+    transform: translate(125rem, -60px); }
+  100% {
+    transform: translate(0, -60px); } }
+
+@keyframes left__slidein-straight {
+  0% {
+    transform: translate(0, -160px); }
+  100% {
+    transform: translate(125rem, -160px); } }
+
+.left__slider-circle {
   height: .5rem;
   width: 25rem;
   background-image: linear-gradient(#fbc5c5 50%, #f03e3e 90%, #33e7d6);
-  animation: left-slidein 5s infinite;
+  animation: left__slidein-circle 5s linear infinite;
   z-index: -20; }
 
-.right-slider {
+.right__slider-circle {
   height: .5rem;
   width: 25rem;
   background-image: linear-gradient(#fbc5c5 50%, #f03e3e 90%, #33e7d6);
-  animation: right-slidein 5s infinite;
+  animation: right__slidein-circle 5s linear infinite;
+  z-index: -20; }
+
+.right__slider-straight {
+  height: .5rem;
+  width: 15rem;
+  background-image: linear-gradient(#fbc5c5 50%, #f03e3e 90%, #33e7d6);
+  animation: right__slidein-straight 3s linear infinite;
+  z-index: -20; }
+
+.left__slider-straight {
+  height: .5rem;
+  width: 15rem;
+  background-image: linear-gradient(#fbc5c5 50%, #f03e3e 90%, #33e7d6);
+  animation: left__slidein-straight 3s linear infinite;
   z-index: -20; }
 
 /*-------------------------------   Base file   ---------------------------------*/
@@ -357,7 +383,15 @@ body {
 
 /*-----------------------------------   Header   --------------------------------*/
 .nav {
-  grid-column: 1/-1; }
+  grid-column: 1/-1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+  .nav__logo {
+    height: 8.8rem;
+    width: 8.8rem;
+    margin-left: 10rem;
+    margin-top: 1.6rem; }
   .nav__list {
     display: flex;
     align-items: center;
@@ -385,7 +419,7 @@ body {
       margin-left: -1.6rem;
       box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
       background-color: #99f3eb; }
-    .nav__list-btn:hover {
+    .nav__list-btn:hover, .nav__list-btn:active {
       transform: scale(1.08);
       box-shadow: 3px 3px 1rem rgba(0, 0, 0, 0.25);
       background-image: linear-gradient(#ffe4b3 50%, #ffa500 100%); }
@@ -396,24 +430,41 @@ body {
   display: flex;
   align-items: center;
   gap: 6rem;
-  height: 70vh;
-  margin-bottom: 16rem;
+  height: 75vh;
+  margin-bottom: 12rem;
   color: #0c3256; }
   .header__text-box {
     position: relative;
     flex: 0 0 55%; }
+  .header__btn, .header__btn:link, .header__btn:visited {
+    display: inline-block;
+    padding: 1rem 1.6rem;
+    border-radius: 1rem;
+    transition: all .2s ease-in;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    background-color: #99f3eb;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #3d5b78;
+    margin-left: 10rem; }
+  .header__btn:hover, .header__btn:active {
+    transform: scale(1.08);
+    box-shadow: 3px 3px 1rem rgba(0, 0, 0, 0.25);
+    background-image: linear-gradient(#ffe4b3 50%, #ffa500 100%); }
   .header__heading-primary {
     font-size: 6.4rem;
     color: inherit;
     line-height: 1;
     padding-left: 10rem;
-    margin-bottom: 3.2rem;
+    margin-bottom: 4.8rem;
     z-index: 10;
     position: relative; }
   .header__paragraph {
     font-size: 4rem;
     color: inherit;
-    padding-left: 10rem; }
+    padding-left: 10rem;
+    margin-bottom: 3.2rem; }
   .header__img {
     height: 53.5rem;
     width: 100%;
