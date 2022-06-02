@@ -505,7 +505,7 @@
 
 
 
-    <section class="pricing">
+    <section class="pricing" id="pricing">
 
 
         <!--/ -----------------Basic Card --------------------->
@@ -593,7 +593,7 @@
                         <p class="card__payment">One-off Payment</p>
                         <p class="card__payment-sub">*No Annual Subscription</p>
 
-                        <a href="#" class="card__btn">Enquire Now!</a>
+                        <a href="#popup" class="card__btn">Enquire Now!</a>
 
 
                     </div>
@@ -700,7 +700,7 @@
                         <p class="card__payment">per month</p>
                         <p class="card__payment-sub">*Annual Subscription</p>
 
-                        <a href="#" class="card__btn">Enquire Now!</a>
+                        <a href="#popup" class="card__btn">Enquire Now!</a>
 
 
                     </div>
@@ -813,7 +813,7 @@
                         <p class="card__payment">per month</p>
                         <p class="card__payment-sub">*Annual Subscription</p>
 
-                        <a href="#" class="card__btn">Enquire Now!</a>
+                        <a href="#popup" class="card__btn">Enquire Now!</a>
 
 
                     </div>
@@ -840,71 +840,74 @@
     <section class="popup" id="popup">
 
 
-        <div class="popup__form">
-
-            <form action="#" class="form">
 
 
-                <div class="popup__form-group">
-
-                    <h2 class="popup__form-heading">
-
-                        Enquire now
-
-                    </h2>
-
-                </div>
+        <div class="popup__content">
 
 
-                <div class="popup__form-group">
+            <div class="popup__form">
 
-                    <input type="text" class="popup__form-input" placeholder="Full Name" id="name" required>
-
-                    <label for="name" class="popup__form-label">Full Name</label>
+                <form action="#" class="form">
 
 
-                </div>
+                    <div class="popup__form-group">
+
+                        <h2 class="popup__form-heading">
+
+                            Enquire now
+
+                        </h2>
+
+                    </div>
 
 
+                    <div class="popup__form-group">
 
-                <div class="popup__form-group">
+                        <input type="text" class="popup__form-input" placeholder="Full Name" id="name" required>
 
-                    <input type="email" class="popup__form-input" placeholder="E-mail" id="email" required>
-
-                    <label for="email" class="popup__form-label">E-mail</label>
+                        <label for="name" class="popup__form-label">Full Name</label>
 
 
-                </div>
+                    </div>
 
 
 
-                <!--/ <a> link button  -->
+                    <div class="popup__form-group">
+
+                        <input type="email" class="popup__form-input" placeholder="E-mail" id="email" required>
+
+                        <label for="email" class="popup__form-label">E-mail</label>
+
+
+                    </div>
 
 
 
-                <div class="popup__form-group">
+                    <!--/ <a> link button  -->
 
 
-                    <a href="#" class="btn">Send Enquiry</a>
+
+                    <div class="popup__form-group">
 
 
-                </div>
+                        <a href="#" class="popup__form-btn">Send Enquiry</a>
 
-            </form>
+
+                    </div>
+
+
+                    <!--/ close btn  -->
+
+                    <a href="#pricing" class="popup__close">&times;</a>
+
+
+                </form>
+
+
+            </div>
 
 
         </div>
-
-
-        <!--/  right side  -->
-
-
-        <div class="popup__form-right">
-
-
-        </div>
-
-
 
 
 
