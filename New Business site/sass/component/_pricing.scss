@@ -10,52 +10,20 @@
   display: grid;
 
 
-  grid-template-columns: repeat(auto-fit, 25rem);
+  grid-template-columns: repeat(auto-fit, 26.25rem);
 
 
   align-items: center;
 
-  // justify-content: normal;
 
   justify-content: space-between;
 
   column-gap: .8rem;
 
+	margin-bottom: $-mgb-break-lg;
+
 
 }
-
-
-// .card-standard{
-
-// 	overflow: hidden;
-// }
-
-
-// .card-standard:after{
-
-// 	content:"Best Value";
-// 	display: block;
-
-// 	 padding-top: .75rem;
-
-// 	background-color: $-color-accent-red;
-
-// 	transform: translateX(165%) translateY(-1160%) rotate(45deg);
-
-// 	width: 42%;
-// 	height: 3rem;
-
-// 	font-size: 1.2rem;
-
-// 	font-weight: 500;
-
-// 	text-align: center;
-
-
-
-
-// }
-
 
 
 
@@ -87,8 +55,11 @@
 
     font-size: $-font-med;
 
-    font-weight: 400;
+    font-weight: 500;
 
+		color: $-color-accent-orange-darkest;
+		// color: $-color-secondary;
+		
     text-align: center;
 
     text-transform: uppercase;
@@ -96,6 +67,8 @@
     padding: 3.2rem 0;
 
     margin-bottom: 5.6rem;
+
+		border-bottom: 1px solid $-color-accent-orange-darkest;
 
 
 
@@ -129,15 +102,29 @@
     box-shadow: $-box-sh-lightest;
 
 
+		
+		///  background image blend
+	
 
+		// background-image:  url(../img/calligraphy.jpg);
 
+		// background-position: top;
 
+		// background-size: cover;
+
+		// background-blend-mode: screen;
+
+	
+		
+		
+		
+		
     &-front {
-
-      background-color: #fff;
-
+			
+			background-color: #fff;
+			
       transform: rotateY(0);
-
+			
 
 
 
@@ -170,6 +157,8 @@
         font-size: 1.2rem;
 
         font-weight: 600;
+
+				color: #fff;
 
         text-align: center;
 
@@ -222,6 +211,8 @@
         font-size: 1.2rem;
 
         font-weight: 600;
+
+				color: #fff;
 
         text-align: center;
 
@@ -298,7 +289,9 @@
 
     font-size: $-font-display;
 
+		// color: $-color-secondary;
 
+		color: $-color-accent-orange-darkest;
 
   }
 

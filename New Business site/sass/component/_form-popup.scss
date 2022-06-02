@@ -1,0 +1,150 @@
+/*------------------------------------- Form popup -------------------------------*/
+
+
+.popup {
+
+  grid-column: start 3 / start 9;
+
+
+	// background-image: url(../img/myweb-cropped.png);
+
+background-image:linear-gradient(100deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 52.5%, transparent 50%) , url(../img/myweb-cropped.png);
+
+background-size: cover;
+
+
+
+  display: grid;
+
+
+  grid-template-columns: repeat(auto-fit, 45rem);
+
+
+
+  &__form {
+
+    // background-color: #fff;
+
+    padding: 4.8rem;
+
+
+
+    &-group:not(:last-child) {
+
+      margin-bottom: $-mgb-med;
+
+    }
+
+
+
+    &-left {}
+
+
+    &-heading {
+
+      font-size: $-font-xmed;
+      text-align: center;
+			margin-bottom: $-mgb-med;
+
+    }
+
+
+    &-input {
+
+      font-family: inherit;
+      color: $-color-accent-orange-darkest;
+      font-size: $-font-display;
+
+
+      padding: 1.5rem 2.5rem;
+
+      border-radius: 2px;
+
+      background-color: rgba(255, 255, 255, 0.5);
+
+      border: 3px solid transparent;
+
+      width: 100%;
+
+      display: block;
+
+      transition: all .3s;
+
+
+
+      &:focus {
+
+        outline: none;
+
+        box-shadow: $-box-sh-lightest;
+
+        border-bottom: 2px solid $-color-accent-orange;
+
+
+      }
+
+      &:focus:invalid {
+
+        border-bottom: 3px solid $-color-accent-red-dark;
+
+
+      }
+
+      &::placeholder {
+
+        color: $-color-accent-orange-darkest;
+      }
+
+
+
+
+
+    }
+
+
+    &-label {
+
+
+      font-size: $-font-sm;
+
+      font-weight: 600;
+
+      color: $-color-accent-orange-dark;
+
+      margin-left: 3.2rem;
+
+      margin-top: .7rem;
+
+      display: block;
+
+
+      transition: all .3s;
+
+
+    }
+
+    &-input:placeholder-shown+&-label {
+
+      opacity: 0;
+
+      visibility: hidden;
+
+      transform: translateY(-4rem);
+    }
+
+
+
+
+
+
+
+  }
+
+
+
+}
+
+// .popup__form-input::placeholder{
+
+// 	color: pink;
+// }

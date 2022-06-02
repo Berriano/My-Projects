@@ -97,14 +97,62 @@ body {
     margin-right: 6rem;
     line-height: 1.2; }
 
+/*------------------------------------- Form popup -------------------------------*/
+.popup {
+  grid-column: start 3 / start 9;
+  background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 52.5%, transparent 50%), url(../img/myweb-cropped.png);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 45rem); }
+  .popup__form {
+    padding: 4.8rem; }
+    .popup__form-group:not(:last-child) {
+      margin-bottom: 3.2rem; }
+    .popup__form-heading {
+      font-size: 3.2rem;
+      text-align: center;
+      margin-bottom: 3.2rem; }
+    .popup__form-input {
+      font-family: inherit;
+      color: #4c3100;
+      font-size: 1.6rem;
+      padding: 1.5rem 2.5rem;
+      border-radius: 2px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border: 3px solid transparent;
+      width: 100%;
+      display: block;
+      transition: all .3s; }
+      .popup__form-input:focus {
+        outline: none;
+        box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+        border-bottom: 2px solid #ffa500; }
+      .popup__form-input:focus:invalid {
+        border-bottom: 3px solid #a82b2b; }
+      .popup__form-input::placeholder {
+        color: #4c3100; }
+    .popup__form-label {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #805300;
+      margin-left: 3.2rem;
+      margin-top: .7rem;
+      display: block;
+      transition: all .3s; }
+    .popup__form-input:placeholder-shown + .popup__form-label {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-4rem); }
+
 /*--------------------------------------- Pricing ---------------------------------*/
 .pricing {
   grid-column: start 3/ start 9;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 25rem);
+  grid-template-columns: repeat(auto-fit, 26.25rem);
   align-items: center;
   justify-content: space-between;
-  column-gap: .8rem; }
+  column-gap: .8rem;
+  margin-bottom: 16rem; }
 
 .card {
   -moz-perspective: 150rem;
@@ -114,11 +162,13 @@ body {
   .card__heading {
     background-image: linear-gradient(to bottom right, #ffa500, #ffe4b3);
     font-size: 2.4rem;
-    font-weight: 400;
+    font-weight: 500;
+    color: #4c3100;
     text-align: center;
     text-transform: uppercase;
     padding: 3.2rem 0;
-    margin-bottom: 5.6rem; }
+    margin-bottom: 5.6rem;
+    border-bottom: 1px solid #4c3100; }
     .card__heading-back {
       margin-bottom: 5rem; }
   .card__side {
@@ -146,6 +196,7 @@ body {
         height: 3rem;
         font-size: 1.2rem;
         font-weight: 600;
+        color: #fff;
         text-align: center; }
     .card__side-back {
       background-color: #fff;
@@ -163,6 +214,7 @@ body {
         height: 3rem;
         font-size: 1.2rem;
         font-weight: 600;
+        color: #fff;
         text-align: center; }
   .card:hover .card__side-front {
     transform: rotateY(-180deg); }
@@ -180,7 +232,8 @@ body {
       align-items: center;
       margin-bottom: 1.8rem; }
   .card__text {
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    color: #4c3100; }
   .card__payment {
     font-size: 2.4rem;
     font-weight: 200;
