@@ -2,30 +2,48 @@
 
 
 
-.social{
+.social {
 
-	grid-column: start 3 / start 9;
-
-
-	// background-color: $-color-accent-orange-dark;
+  grid-column: start 3 / start 9;
 
 
-	display: flex;
-
-	align-items: center;
-
-	justify-content: center;
-
-	gap: 6rem;
+  margin-bottom: $-mgb-huge;
 
 
-	&__icon{
-
-		height: 6rem;
-		width: 6rem;
 
 
+  display: grid;
+
+  justify-content: center;
+
+  grid-template-columns: repeat(auto-fit, 10rem);
+
+  align-items: center;
+
+  justify-items: center;
+
+  // column-gap: 2rem;
+
+
+
+  &__icon,
+  &__icon:link &__icon:visited {
+
+    height: 6rem;
+    width: 6rem;
+    transition: all .2s;
+
+		
+		
+  }
 	
+	
+  &__icon:hover,
+  &__icon:active {
+		
+		
+		transform: scale(1.35) translateY(-3px);
+		
 	}
 
 

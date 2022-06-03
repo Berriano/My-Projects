@@ -1,1 +1,122 @@
 /*-------------------------------------  footer  ---------------------------------*/
+
+
+.footer {
+
+  grid-column: start 2 / start 10;
+
+
+  border-top: 1px solid $-color-accent-orange-dark;
+
+
+	display: grid;
+
+	grid-template-columns: repeat(auto-fit, 25rem);
+
+	align-items: flex-start;
+
+	justify-content: space-evenly;
+
+
+
+
+
+
+
+  &__logo {
+
+
+
+    &-img {
+
+			margin-top: 6.4rem;
+
+      height: 12rem;
+      width: 12rem;
+
+
+
+    }
+
+  }
+
+	&__section{
+
+		display: flex;
+		flex-direction: column;
+
+		gap: 3.2rem;
+
+		padding-top: 6.4rem;
+	}
+	
+	
+	
+	
+  &__heading {
+		
+		font-size: $-font-display;
+		
+    font-weight: 400;
+		
+    text-transform: uppercase;
+		
+    color: $-color-primary-dark;
+
+
+		
+
+
+  }
+
+
+
+
+  &__link:link,
+  &__link:visited {
+
+    text-decoration: none;
+
+		// 
+    color: $-color-accent-orange-darkest;
+		transition: all .2s;
+
+
+
+
+  }
+
+	
+		&__link:hover,
+		&__link:active {
+		
+		
+					color: $-color-accent-orange-dark;
+				 transform: scale(1.15) translateX(2px) translateY(-5px);
+				 text-shadow: .25px .25px .5px black;
+				 display: inline-block;
+		
+				}
+
+
+  &__list {
+
+    list-style: none;
+
+
+
+
+    &-item {
+
+      font-size: $-font-sm;
+      margin-bottom: $-mgb-xsm;
+
+      color: $-color-accent-orange-darkest;
+ 		
+
+    }
+    
+  }
+
+}
+
