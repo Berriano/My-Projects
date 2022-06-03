@@ -160,9 +160,9 @@
 
   gap: 6rem;
 
-  height: 75vh;
+  height: 73.5vh;
 
-  margin-bottom: $-mgb-break-sm;
+  margin-bottom: $-mgb-huge;
 
 
 
@@ -256,7 +256,7 @@
 
   &__paragraph {
 
-    font-size: 4rem;
+    font-size: $-font-xmed;
     color: inherit;
     padding-left: 10rem;
 
