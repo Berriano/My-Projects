@@ -2,19 +2,19 @@
 /*-------------------------------- Animations ---------------------------------*/
 @keyframes left__slidein-circle {
   0% {
-    transform: translate(0, -155px); }
+    transform: translate(0, -165px); }
   75% {
-    transform: translate(125rem, -155px); }
+    transform: translate(125rem, -165px); }
   100% {
-    transform: translate(125rem, -75px); } }
+    transform: translate(125rem, -65px); } }
 
 @keyframes right__slidein-circle {
   0% {
-    transform: translate(125rem, -75px); }
+    transform: translate(125rem, -65px); }
   75% {
-    transform: translate(0, -75px); }
+    transform: translate(0, -65px); }
   100% {
-    transform: translate(0, -155px); } }
+    transform: translate(0, -165px); } }
 
 @keyframes right__slidein-straight {
   0% {
@@ -93,10 +93,10 @@ body {
 /*---------------------------------- Feature -----------------------------------*/
 .feature {
   grid-column: start 2/ start 10;
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
-  align-items: flex-start;
   padding: 0 3.2rem;
+  display: grid;
+  align-items: flex-start;
   row-gap: 2rem;
   margin-bottom: 16rem; }
   .feature__box {
@@ -337,7 +337,7 @@ body {
 /*--------------------------------------- Sevices ----------------------------------*/
 .services {
   grid-column: start 3 / start 9;
-  margin-bottom: 20rem;
+  margin-bottom: 16rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   align-items: center;
@@ -425,7 +425,8 @@ body {
   grid-column: 1/-1;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-bottom: 2rem; }
   .nav__logo {
     height: 8.8rem;
     width: 8.8rem;
@@ -436,7 +437,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     gap: 8.8rem;
-    margin-right: 12rem;
+    margin-right: 10rem;
     padding-top: 2.4rem;
     font-size: 1.6rem;
     font-weight: 500;
@@ -469,8 +470,8 @@ body {
   display: flex;
   align-items: center;
   gap: 6rem;
-  height: 73.5vh;
-  margin-bottom: 8.8rem;
+  height: 71vh;
+  margin-bottom: 12rem;
   color: #0c3256; }
   .header__text-box {
     position: relative;
@@ -496,11 +497,11 @@ body {
     color: inherit;
     line-height: 1;
     padding-left: 10rem;
-    margin-bottom: 4.8rem;
+    margin-bottom: 6.4rem;
     z-index: 10;
     position: relative; }
   .header__paragraph {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     color: inherit;
     padding-left: 10rem;
     margin-bottom: 3.2rem; }
