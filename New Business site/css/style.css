@@ -381,6 +381,17 @@ body {
     height: 1.6rem;
     width: 1.6rem; }
 
+/*--------------------------------------- Social -------------------------------------*/
+.social {
+  grid-column: start 3 / start 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem; }
+  .social__icon {
+    height: 6rem;
+    width: 6rem; }
+
 /*-----------------------------------   Header   --------------------------------*/
 .nav {
   grid-column: 1/-1;

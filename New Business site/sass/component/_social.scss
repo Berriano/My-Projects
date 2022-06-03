@@ -4,5 +4,32 @@
 
 .social{
 
+	grid-column: start 3 / start 9;
+
+
+	// background-color: $-color-accent-orange-dark;
+
+
+	display: flex;
+
+	align-items: center;
+
+	justify-content: center;
+
+	gap: 6rem;
+
+
+	&__icon{
+
+		height: 6rem;
+		width: 6rem;
+
+
+	
+	}
+
+
+
+
 
 }
