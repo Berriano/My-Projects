@@ -171,64 +171,64 @@
 
 
 
-	
-	
+
+
   &__text-box {
-		
-		position: relative;
-		
+
+    position: relative;
+
     flex: 0 0 55%;
-		
-		
-	}
+
+
+  }
 
 
 
 
-	&__btn,
-	&__btn:link,
-	&__btn:visited {
+  &__btn,
+  &__btn:link,
+  &__btn:visited {
 
 
-		display: inline-block;
-		padding: 1rem 1.6rem;
-		border-radius: 1rem;
-		transition: all .2s ease-in;
+    display: inline-block;
+    padding: 1rem 1.6rem;
+    border-radius: 1rem;
+    transition: all .2s ease-in;
 
-		box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
-		background-color: #99f3eb;
-
-
-		font-size: $-font-display;
-
-		text-decoration: none;
-
-		font-weight: 500;
-
-color: $-color-secondary-light-1;
-		
-		margin-left: 10rem;
-		
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    background-color: #99f3eb;
 
 
-	}
+    font-size: $-font-display;
 
+    text-decoration: none;
 
-	&__btn:hover,
-	&__btn:active {
+    font-weight: 500;
 
-		transform: scale(1.08);
+    color: $-color-secondary;
+
+    margin-left: 10rem;
 
 
 
-		box-shadow: $-box-sh-light;
-
-		background-image: linear-gradient($-color-accent-orange-lightest 50%, $-color-accent-orange 100%);
+  }
 
 
+  &__btn:hover,
+  &__btn:active {
+
+    transform: scale(1.08);
 
 
-	}
+
+    box-shadow: $-box-sh-light;
+
+    background-image: linear-gradient($-color-accent-orange-lightest 50%, $-color-accent-orange 100%);
+
+
+
+
+  }
 
 
 
@@ -260,7 +260,7 @@ color: $-color-secondary-light-1;
     color: inherit;
     padding-left: 10rem;
 
-		margin-bottom: $-mgb-med;
+    margin-bottom: $-mgb-med;
 
   }
 
