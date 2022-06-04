@@ -231,7 +231,6 @@ body {
   height: 36rem;
   display: grid; }
   .card__heading {
-    background-image: linear-gradient(to bottom right, #ffa500, #ffe4b3);
     font-size: 2.4rem;
     font-weight: 500;
     color: #4c3100;
@@ -347,8 +346,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   align-items: center;
   justify-items: center;
-  column-gap: 5rem;
-  row-gap: 5rem;
+  column-gap: 15rem;
+  row-gap: 8rem;
   position: relative; }
   .services__span {
     background-image: linear-gradient(transparent 2.2rem, #fbc5c5 50%, #f03e3e 100%); }
@@ -356,21 +355,21 @@ body {
     font-size: 16rem;
     position: absolute;
     top: 6%;
-    left: 72%;
+    left: 75%;
     opacity: .11;
     z-index: 100000; }
   .services__num-2 {
     font-size: 16rem;
     position: absolute;
     top: 41%;
-    left: 19%;
+    left: 16%;
     opacity: .11;
     z-index: 100000; }
   .services__num-3 {
     font-size: 16rem;
     position: absolute;
     top: 76%;
-    left: 72%;
+    left: 75%;
     opacity: .11;
     z-index: 100000; }
   .services__list {
@@ -525,7 +524,9 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, 25rem);
   align-items: flex-start;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  background-image: linear-gradient(to bottom right, #ffa500, #ffe4b3);
+  padding-bottom: 6rem; }
   .footer__logo-img {
     margin-top: 6.4rem;
     height: 12rem;
@@ -558,12 +559,39 @@ body {
 
 /*------------------------------------ Section breaks ----------------------------*/
 .section__break {
-  grid-column: start 3 / start 9;
+  grid-column: start 2 / start 10;
   margin-bottom: 12rem; }
   .section__break-heading {
     font-size: 3.6rem;
     color: #0c3256; }
+  .section__break-heading-color--1:after {
+    content: "";
+    display: block;
+    width: 120rem;
+    height: 35rem;
+    position: absolute;
+    top: 200%;
+    left: -0%;
+    z-index: -200;
+    border: 1px solid #001614;
+    border-radius: 8px;
+    background-image: linear-gradient(to bottom right, #33e7d6, #ccf9f5); }
+  .section__break-heading-color--2:before {
+    content: "";
+    display: block;
+    width: 120rem;
+    height: 35rem;
+    position: absolute;
+    top: 1017%;
+    left: -0%;
+    z-index: -200;
+    border: 1px solid #001614;
+    border-radius: 8px;
+    background-image: linear-gradient(to top left, #33e7d6, #ccf9f5); }
   .section__break-sub {
     font-size: 2.4rem;
     color: #805300;
     margin-bottom: 2rem; }
+
+.section__break-color--1 {
+  position: relative; }

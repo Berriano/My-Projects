@@ -23,7 +23,7 @@
 
   column-gap: .8rem;
 
-  margin-bottom: $-mgb-break-lg;
+	margin-bottom: $-mgb-break-lg;
 
 
 }
@@ -52,7 +52,7 @@
   &__heading {
 
 
-    background-image: linear-gradient(to bottom right, $-color-accent-orange, $-color-accent-orange-lightest);
+   
 
 
 
@@ -60,9 +60,9 @@
 
     font-weight: 500;
 
-    color: $-color-accent-orange-darkest;
-    // color: $-color-secondary;
-
+		color: $-color-accent-orange-darkest;
+		// color: $-color-secondary;
+		
     text-align: center;
 
     text-transform: uppercase;
@@ -71,19 +71,21 @@
 
     margin-bottom: 5.6rem;
 
-    border-bottom: 1px solid $-color-accent-orange-darkest;
+		border-bottom: 1px solid $-color-accent-orange-darkest;
 
 
-    &-basic {
+		&-basic{
+
+			background-image: linear-gradient(to bottom right, $-color-accent-red, $-color-accent-red-lightest);
+
+		}
+
+		&-standard{
+
+			background-image: linear-gradient(to bottom right, $-color-accent-orange, $-color-accent-orange-lightest);
 
 
-      background-image: linear-gradient(to bottom right, $-color-accent-red, $-color-accent-red-lightest);
-    }
-
-    &-standard {
-      background-image: linear-gradient(to bottom right, $-color-accent-orange, $-color-accent-orange-lightest);
-    }
-
+		}
 
 		&-premium{
 
@@ -91,6 +93,9 @@
 
 
 		}
+
+
+
 
 
 
@@ -125,29 +130,29 @@
     box-shadow: $-box-sh-lightest;
 
 
+		
+		///  background image blend
+	
 
-    ///  background image blend
+		// background-image:  url(../img/calligraphy.jpg);
 
+		// background-position: top;
 
-    // background-image:  url(../img/calligraphy.jpg);
+		// background-size: cover;
 
-    // background-position: top;
+		// background-blend-mode: screen;
 
-    // background-size: cover;
-
-    // background-blend-mode: screen;
-
-
-
-
-
-
+	
+		
+		
+		
+		
     &-front {
-
-      background-color: #fff;
-
+			
+			background-color: #fff;
+			
       transform: rotateY(0);
-
+			
 
 
 
@@ -181,7 +186,7 @@
 
         font-weight: 600;
 
-        color: #fff;
+				color: #fff;
 
         text-align: center;
 
@@ -235,7 +240,7 @@
 
         font-weight: 600;
 
-        color: #fff;
+				color: #fff;
 
         text-align: center;
 
@@ -312,9 +317,9 @@
 
     font-size: $-font-display;
 
-    // color: $-color-secondary;
+		// color: $-color-secondary;
 
-    color: $-color-accent-orange-darkest;
+		color: $-color-accent-orange-darkest;
 
   }
 
