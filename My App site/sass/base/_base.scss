@@ -17,40 +17,41 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 
-	background-color: #fff;
-	
+  background-color: #fff;
+
 }
 
 
 
-body {	
-	
-	font-family:"lato" , sans-serif;
-	
-	
-	
-}
+body {
 
-
-
-.container{
-	
-	max-width: 120rem;
-	
-		background-color: $-color-grey-light-4;
-
-
-		// height: 500px;
-
-		margin: 3rem auto;
-
-		display: grid;
-	
-	
-		grid-template-columns:repeat(10, minmax(min-content, 12rem)) ;
-		
+  font-family: "lato", sans-serif;
 
 
 
 }
 
+
+
+.container {
+
+  max-width: 120rem;
+
+  background-color: $-color-grey-light-4;
+
+
+  color: $-font-col-light;
+
+	// font-weight: 700;
+
+  margin: 3rem auto;
+
+  display: grid;
+
+
+  grid-template-columns: repeat(10, minmax(min-content, 12rem));
+
+
+
+
+}

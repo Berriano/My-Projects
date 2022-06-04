@@ -108,22 +108,21 @@
 
             <div class="main-box__from--form">
 
-							<form action="#" class="main-box__form">
-								
-								<label for="amount-from">Enter Amount:</label>
+                <form action="#" class="main-box__form">
 
-								<input type="text" class="main-box__form--input" id="amount-from" name="am-from" placeholder="Amount" required>
+                    <label for="amount-from">Enter Amount:</label>
+
+                    <input type="text" class="main-box__form--input" id="amount-from" name="am-from" placeholder="Amount" required>
 
 
-							</form>
-	
-							
+                </form>
+
+
 
             </div>
 
 
-						
-						<button class="main-box__from--btn">Click to convert</button>
+
 
 
 
@@ -134,7 +133,7 @@
 
         <div class="main-box__equals">
 
-            <p class="main-box__equals-symbol"> = </p>
+            <p class="main-box__equals-symbol">&rarr;</p>
 
         </div>
 
@@ -145,40 +144,55 @@
 
         <div class="main-box__to">
 
-            <h3 class="main-box__heading main-box__heading-to">Currency converted</h3>
+            <h3 class="main-box__heading main-box__heading-to">Currency converter</h3>
 
 
 
 
 
 
-						
-						<div class="main-box__currency-to">
-							
 
-							<label for="currency" class="main-box__label">Choose Currency:</label>
-							
-							<select name="currency" id="currency" class="main-box__currency">
-								
-							<option value="aud">Australian Dollar</option>
-							<option value="gbp">British Pound</option>
-							<option value="usd">US Dollar</option>
-							
-							
-						</select>
-						
-					</div>
+            <div class="main-box__currency-to">
 
-			</div>
+
+                <label for="currency" class="main-box__label">Choose Currency:</label>
+
+                <select name="currency" id="currency" class="main-box__currency">
+
+                    <option value="aud">Australian Dollar</option>
+                    <option value="gbp">British Pound</option>
+                    <option value="usd">US Dollar</option>
+
+
+                </select>
+
+            </div>
 
 
 
+            <button class="main-box__to--btn">Click to convert</button>
+
+        </div>
 
 
 
     </main>
 
+    <section class="currency__converted">
 
+        <h3 class="main-box__heading currency__converted-heading">Total amount converted</h3>
+
+        <div class="currency__converted-box">
+
+
+            <p class="currency__converted-sign">$</p>
+            <p class="currency__converted-amount">66.50</p>
+
+        </div>
+
+
+
+    </section>
 
 
 

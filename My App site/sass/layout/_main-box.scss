@@ -19,7 +19,8 @@
 
 
 
-  &__from, &__to {
+  &__from,
+  &__to {
 
 
     display: flex;
@@ -31,7 +32,9 @@
 
     align-items: start;
 
-    padding: 3.2rem 6.4rem;
+    // padding: 3.2rem 6.4rem;
+    padding: 3.6rem 8.4rem;
+
 
     background-color: $-color-red-primary-light-3;
 
@@ -59,7 +62,33 @@
 
       align-self: center;
 
+      justify-self: center;
 
+      border: none;
+
+      border-radius: 3px;
+
+      box-shadow: $-bsh-light;
+
+      background-color: $-color-green-secondary-dark-1;
+
+      color: #fff;
+
+      cursor: pointer;
+
+      font-size: $-font-display;
+
+      font-weight: 800;
+
+      transition: all .2s;
+
+
+    }
+
+    &--btn:hover {
+
+      background-color: $-color-green-secondary-dark-5;
+      transform: scale(1.1);
     }
 
   }
@@ -76,6 +105,8 @@
 
     align-self: center;
 
+
+
     padding-top: 1.6rem;
 
     font-weight: 500;
@@ -84,7 +115,8 @@
 
 
 
-    &-from, &-to {
+    &-from,
+    &-to {
 
       margin-bottom: $-mg-btm-med-sm;
 
@@ -95,8 +127,22 @@
   }
 
 
+  &__currency,
+  &__form--input {
 
-  &__currency-from, &__currency-to {
+    border: none;
+    padding: .4rem 0;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-left: 1.2rem;
+
+    border: 2px solid $-color-grey-light-3;
+  }
+
+
+
+  &__currency-from,
+  &__currency-to {
 
 
     margin-bottom: $-mg-btm-sm;
@@ -116,8 +162,9 @@
 
   &__form--input {
 
-		padding: .4rem 0.2rem;
-	}
+    padding: .4rem 0.2rem;
+    width: 55%;
+  }
 
 
 
@@ -130,12 +177,14 @@
 
     justify-self: center;
 
+
+
     &-symbol {
 
-      font-size: $-font-lg;
+      font-size: $-font-huge;
 
       padding: 1rem;
-
+   
 
 
     }
@@ -144,10 +193,13 @@
 
   &__to {
 
- 
 
-    background-color: $-color-green-secondary-light-3;
-   }
+
+    background-color: #fff2b8;
+  }
+
+
+
 
 
 }

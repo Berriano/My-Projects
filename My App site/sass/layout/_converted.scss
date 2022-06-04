@@ -1,0 +1,75 @@
+/*---------------------------------------- Converted --------------------------------*/
+
+.currency__converted{
+
+	grid-column: 4/8;
+
+	margin-bottom: $-mg-btm-lg;
+
+	background-color: $-color-green-secondary-light-5;
+
+	
+	border-radius: 4px;
+
+	box-shadow: $-bsh-light;
+
+	text-align: center;
+	
+	
+	height: 200px;
+	
+	
+	&-heading{
+		
+		text-align: center;
+
+		margin-bottom: $-mg-btm-lg;
+
+		padding-top: 3rem;
+
+
+	}
+
+
+
+
+	&-box{
+
+		display: inline-flex;
+
+		background-color: $-color-green-secondary-dark-4;
+
+		padding:1.6rem 2.8rem;
+
+		color: #fff;
+
+		border-radius: 5px;
+
+		margin-bottom: $-mg-btm-lg;
+
+
+
+
+		
+
+
+
+
+
+
+	}
+
+	&-sign{
+
+		font-size: $-font-huge;
+	}
+	
+	&-amount{
+		
+		font-size: $-font-huge;
+
+	}
+	
+	
+}
+

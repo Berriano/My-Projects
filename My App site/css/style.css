@@ -13,11 +13,12 @@ html {
   background-color: #fff; }
 
 body {
-  font-family: "lato" , sans-serif; }
+  font-family: "lato", sans-serif; }
 
 .container {
   max-width: 120rem;
   background-color: #c3c7cb;
+  color: #282b2d;
   margin: 3rem auto;
   display: grid;
   grid-template-columns: repeat(10, minmax(min-content, 12rem)); }
@@ -66,7 +67,7 @@ body {
     flex-direction: column;
     gap: 3rem;
     align-items: start;
-    padding: 3.2rem 6.4rem;
+    padding: 3.6rem 8.4rem;
     background-color: #f68b8b;
     border-radius: 4px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); }
@@ -75,7 +76,20 @@ body {
       font-size: 1.6rem; }
     .main-box__from--btn, .main-box__to--btn {
       padding: 1rem 2rem;
-      align-self: center; }
+      align-self: center;
+      justify-self: center;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+      background-color: #49ba5c;
+      color: #fff;
+      cursor: pointer;
+      font-size: 1.6rem;
+      font-weight: 800;
+      transition: all .2s; }
+    .main-box__from--btn:hover, .main-box__to--btn:hover {
+      background-color: #296833;
+      transform: scale(1.1); }
   .main-box__heading {
     text-transform: uppercase;
     font-size: 2rem;
@@ -84,17 +98,50 @@ body {
     font-weight: 500; }
     .main-box__heading-from, .main-box__heading-to {
       margin-bottom: 1.6rem; }
+  .main-box__currency, .main-box__form--input {
+    border: none;
+    padding: .4rem 0;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-left: 1.2rem;
+    border: 2px solid #b6bbc0; }
   .main-box__currency-from, .main-box__currency-to {
     margin-bottom: 1.2rem; }
   .main-box__label {
     font-size: 1.6rem; }
   .main-box__form--input {
-    padding: .4rem 0.2rem; }
+    padding: .4rem 0.2rem;
+    width: 55%; }
   .main-box__equals {
     align-self: center;
     justify-self: center; }
     .main-box__equals-symbol {
-      font-size: 3.2rem;
+      font-size: 4.2rem;
       padding: 1rem; }
   .main-box__to {
-    background-color: #85dd94; }
+    background-color: #fff2b8; }
+
+/*---------------------------------------- Converted --------------------------------*/
+.currency__converted {
+  grid-column: 4/8;
+  margin-bottom: 3.2rem;
+  background-color: #a8e7b3;
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  height: 200px; }
+  .currency__converted-heading {
+    text-align: center;
+    margin-bottom: 3.2rem;
+    padding-top: 3rem; }
+  .currency__converted-box {
+    display: inline-flex;
+    background-color: #317c3d;
+    padding: 1.6rem 2.8rem;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 3.2rem; }
+  .currency__converted-sign {
+    font-size: 4.2rem; }
+  .currency__converted-amount {
+    font-size: 4.2rem; }
