@@ -17,19 +17,21 @@
 
 
 
-  &__from {
+
+
+  &__from, &__to {
 
 
     display: flex;
 
     flex-direction: column;
 
-		gap: 3rem;
+    gap: 3rem;
 
 
+    align-items: start;
 
-    height: 400px;
-
+    padding: 3.2rem 6.4rem;
 
     background-color: $-color-red-primary-light-3;
 
@@ -38,6 +40,27 @@
 
     box-shadow: $-bsh-light;
 
+
+    &--form {
+
+
+      margin-bottom: $-mg-btm-sm;
+
+      font-size: $-font-display;
+    }
+
+
+
+    &--btn {
+
+
+      padding: 1rem 2rem;
+
+
+      align-self: center;
+
+
+    }
 
   }
 
@@ -51,14 +74,17 @@
 
     font-size: $-font-med;
 
-    text-align: center;
+    align-self: center;
 
     padding-top: 1.6rem;
 
     font-weight: 500;
 
 
-    &-from {
+
+
+
+    &-from, &-to {
 
       margin-bottom: $-mg-btm-med-sm;
 
@@ -68,17 +94,30 @@
 
   }
 
+
+
+  &__currency-from, &__currency-to {
+
+
+    margin-bottom: $-mg-btm-sm;
+  }
+
+
+
   &__label {
 
     font-size: $-font-display;
 
-		padding-left: 3rem;
+
 
   }
 
 
 
+  &__form--input {
 
+		padding: .4rem 0.2rem;
+	}
 
 
 
@@ -105,12 +144,10 @@
 
   &__to {
 
-    border-radius: 4px;
+ 
 
     background-color: $-color-green-secondary-light-3;
-    box-shadow: $-bsh-light;
-    ;
-  }
+   }
 
 
 }
