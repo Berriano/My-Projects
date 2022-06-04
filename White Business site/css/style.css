@@ -355,21 +355,21 @@ body {
     font-size: 16rem;
     position: absolute;
     top: 6%;
-    left: 16%;
+    left: 17%;
     opacity: .11;
     z-index: 100000; }
   .services__num-2 {
     font-size: 16rem;
     position: absolute;
     top: 41%;
-    left: 74%;
+    left: 73%;
     opacity: .11;
     z-index: 100000; }
   .services__num-3 {
     font-size: 16rem;
     position: absolute;
-    top: 76%;
-    left: 16%;
+    top: 77%;
+    left: 17%;
     opacity: .11;
     z-index: 100000; }
   .services__list {
@@ -567,7 +567,7 @@ body {
   grid-column: start 2 / start 10;
   margin-bottom: 12rem; }
   .section__break-heading {
-    font-size: 3.6rem;
+    font-size: 3.8rem;
     color: #0c3256; }
   .section__break-heading-color--1:after {
     content: "";
