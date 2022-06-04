@@ -12,7 +12,7 @@
     "prefix:css": "postcss css/style.comp.css --use autoprefixer -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "browserslist": "last 10 versions",
-    "devserver": "live-server --browser==opera",
+    "devserver": "live-server --browser==firefox",
 
 
     "start": "npm-run-all --parallel watch:sass devserver ",

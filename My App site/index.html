@@ -10,14 +10,14 @@
     <!-------   Google fonts linked  ------->
 
 
-		<!--/ josefin font  -->
+    <!--/ josefin font  -->
 
 
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|
 		Nunito:300,300i" rel="stylesheet">
 
 
-		<!--/ lato font  -->
+    <!--/ lato font  -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,138 @@
 
 </head>
 
-<body>
+
+
+<body class="container">
+
+
+    <header class="header">
+
+
+        <div class="header__logo">
+
+
+            <img src="img/Cash.png" alt="cash logo" class="header__logo-img">
+
+            <p class="header__logo-text">Cash Money</p>
+
+
+        </div>
+
+
+        <div class="header__text-box">
+
+            <h1 class="header__heading">Money Converter App</h1>
+
+
+
+        </div>
+
+        <div class="header__dateTime">
+
+            <p class="header__time">18:01</p>
+            <p class="header__date">21/02/76</p>
+
+
+        </div>
+
+
+
+
+    </header>
+
+
+    <main class="main-box">
+
+
+
+        <!----------------- from box  --------------->
+
+
+
+        <div class="main-box__from">
+
+            <h3 class="main-box__heading main-box__heading-from ">Currency held</h3>
+
+
+            <div class="main-box__currency-from">
+
+
+                <label for="currency" class="main-box__label">Choose Currency:</label>
+
+                <select name="currency" id="currency" class="main-box__currency">
+
+                    <option value="aud">Australian Dollar</option>
+                    <option value="gbp">British Pound</option>
+                    <option value="usd">US Dollar</option>
+
+
+                </select>
+
+
+            </div>
+
+            <div class="main-box__from--form">
+
+							<form action="#" class="main-box__form">
+								
+								<label for="amount-from">Enter Amount:</label>
+
+								<input type="text" class="main-box__form--input" id="amount-from" name="am-from" placeholder="Amount" required>
+
+
+							</form>
+							
+							<button class="main-box__from--btn">Click to convert</button>
+								
+								
+								
+								
+								
+								
+
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+        <div class="main-box__equals">
+
+            <p class="main-box__equals-symbol"> = </p>
+
+        </div>
+
+
+
+        <!------------------ To box ------------------>
+
+
+        <div class="main-box__to">
+
+            <h3 class="main-box__heading">Currency converted</h3>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+    </main>
+
+
 
 
 

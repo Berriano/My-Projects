@@ -1,1 +1,94 @@
 /*-----------------------------------   Header   --------------------------------*/
+
+
+.header {
+
+  grid-column: 1/11;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr) );
+
+  align-items: flex-start;
+
+  justify-items: center;
+
+	padding: 1.6rem 0;
+
+  background-color: $-color-grey-light-1;
+
+
+
+	&__logo{
+
+
+		display: flex;
+
+		align-items: center;
+
+		gap: 2rem;
+
+		justify-self: start;
+
+
+
+		&-img{	
+	
+			width: 5rem;
+
+			height: 5rem;
+
+			padding-left: 2rem;
+
+				
+		}
+
+
+
+		&-text{
+
+
+			font-size: $-font-med;
+
+
+		}
+
+
+	}
+
+
+
+
+  &__text-box {
+
+    font-size: $-head-font-s;
+
+  }
+
+
+
+	&__dateTime{
+
+		justify-self: end;
+
+		padding-right: 2rem;
+
+	}
+
+
+
+	&__time{
+
+		font-size: $-font-med;
+
+		margin-bottom: 1rem;
+	}
+
+
+
+	&__date{
+		font-size: $-font-s;
+	}
+
+
+}

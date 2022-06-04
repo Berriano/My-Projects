@@ -1,0 +1,114 @@
+/*-------------------------- Variables -------------------------*/
+
+
+
+/// greys
+
+
+$-color-red-primary-light-4:#f89f9f;
+$-color-red-primary-light-3:#f68b8b;
+$-color-red-primary-light-2:#f57878;
+$-color-red-primary-light-1:#f36565;
+$-color-red-primary-light:#f25151;
+
+$-color-red-primary:#f03e3e;
+
+$-color-red-primary-dark: #d83838;
+$-color-red-primary-dark-1:#c03232;
+$-color-red-primary-dark-2:#a82b2b;
+$-color-red-primary-dark-3:#902525;
+
+
+
+$-color-green-secondary-light:#51cf66;
+$-color-green-secondary-light-1:#62d475;
+$-color-green-secondary-light-2:#74d985;
+$-color-green-secondary-light-3:#85dd94;
+$-color-green-secondary-light-4:#97e2a3;
+$-color-green-secondary-light-5:#a8e7b3;
+
+
+$-color-green-secondary:#51cf66;
+
+
+$-color-green-secondary-dark-1:#49ba5c;
+$-color-green-secondary-dark-2:#41a652;
+$-color-green-secondary-dark-3:#399147;
+$-color-green-secondary-dark-4:#317c3d;
+$-color-green-secondary-dark-5:#296833;
+
+
+$-color-grey:#868e96;
+$-color-grey-1:#798087;
+$-color-grey-2:#6b7278;
+$-color-grey-3:#868e96;
+$-color-grey-4:#50555a;
+
+
+
+$-color-grey-light:#9299a1;
+$-color-grey-light-1:#9ea5ab;
+$-color-grey-light-2:#aab0b6;
+$-color-grey-light-3:#b6bbc0;
+$-color-grey-light-4:#c3c7cb;
+
+
+
+/// box shadows 
+
+
+
+
+$-bsh-light:1px 1px 4px rgba(0, 0, 0, 0.4);
+$-bsh-med:3px 3px 5px rgba(0, 0, 0, 0.6);
+$-bsh-dark:10px 10px 6px rgba(0, 0, 0, 0.8);
+
+
+
+/// margin bottom
+
+
+
+$-mg-btm-xsm: .8rem;
+$-mg-btm-sm: 1.2rem;
+$-mg-btm-med-sm: 1.6rem;
+$-mg-btm-med:2rem;
+$-mg-btm-med-lg:2.4rem;
+$-mg-btm-lg:3.2rem;
+$-mg-btm-xl:4.8rem;
+$-mg-btm-huge:6.4rem;
+
+
+
+
+
+
+
+
+//// text font sizes
+
+
+
+
+$-font-xs:.8rem;
+$-font-s:1.2rem;
+$-font-display:1.6rem;
+$-font-med:2rem;
+$-font-med-lg:2.4rem;
+$-font-lg:3.2rem;
+$-font-xlg:3.6rem;
+$-font-huge:4.2rem;
+$-font-x-huge:4.8rem;
+
+
+/// heading font sizes
+
+
+
+$-head-font-tiny: .6rem;
+$-head-font-xs: 1rem;
+$-head-font-s: 1.6rem;
+$-head-font-med:2.4rem;
+$-head-font-lg:3.2rem;
+$-head-font-xl:4.8rem;
+

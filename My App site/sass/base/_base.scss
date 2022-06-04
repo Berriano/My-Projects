@@ -17,15 +17,40 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 
+	background-color: #fff;
+	
 }
 
 
 
 body {	
-	font-size: 4em;
-  font-family:"lato" , sans-serif;
-  
-
+	
+	font-family:"lato" , sans-serif;
+	
+	
+	
 }
 
+
+
+.container{
+	
+	max-width: 120rem;
+	
+		background-color: $-color-grey-light;
+
+
+		// height: 500px;
+
+		margin: 3rem auto;
+
+		display: grid;
+	
+	
+		grid-template-columns:repeat(10, minmax(min-content, 12rem)) ;
+		
+
+
+
+}
 
