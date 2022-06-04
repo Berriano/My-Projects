@@ -33,6 +33,8 @@ body {
   justify-items: center;
   padding: 1.6rem 0;
   background-color: #9ea5ab; }
+  .header__heading {
+    transform: skew(-7deg); }
   .header__logo {
     display: flex;
     align-items: center;
