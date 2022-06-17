@@ -16,22 +16,24 @@ body {
   font-family: "lato", sans-serif; }
 
 .container {
-  max-width: 120rem;
+  max-width: 105rem;
   background-color: #c3c7cb;
   color: #282b2d;
   margin: 3rem auto;
   display: grid;
-  grid-template-columns: repeat(10, minmax(min-content, 12rem)); }
+  grid-template-columns: repeat(10, minmax(min-content, 12rem));
+  justify-content: center; }
 
 /*----------------------------------- Typography ---------------------------------*/
 /*-----------------------------------   Header   --------------------------------*/
 .header {
-  grid-column: 1/11;
+  grid-column: 1/-1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   align-items: flex-start;
   justify-items: center;
-  padding: 1.6rem 0;
+  justify-content: space-between;
+  padding: 1.6rem 2rem;
   background-color: #9ea5ab; }
   .header__heading {
     transform: skew(-7deg); }
@@ -130,8 +132,7 @@ body {
   background-color: #a8e7b3;
   border-radius: 4px;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-  text-align: center;
-  height: 200px; }
+  text-align: center; }
   .currency__converted-heading {
     text-align: center;
     margin-bottom: 3.2rem;
@@ -139,10 +140,12 @@ body {
   .currency__converted-box {
     display: inline-flex;
     background-color: #317c3d;
-    padding: 1.6rem 2.8rem;
+    padding: 1.2rem 0;
     color: #fff;
     border-radius: 5px;
-    margin-bottom: 3.2rem; }
+    margin-bottom: 3.2rem;
+    width: 75%;
+    justify-content: center; }
   .currency__converted-sign {
     font-size: 4.2rem; }
   .currency__converted-amount {

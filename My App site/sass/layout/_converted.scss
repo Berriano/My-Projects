@@ -16,7 +16,7 @@
 	text-align: center;
 	
 	
-	height: 200px;
+
 	
 	
 	&-heading{
@@ -39,13 +39,17 @@
 
 		background-color: $-color-green-secondary-dark-4;
 
-		padding:1.6rem 2.8rem;
+		padding:1.2rem 0;
 
 		color: #fff;
 
 		border-radius: 5px;
 
 		margin-bottom: $-mg-btm-lg;
+
+		width: 75%;
+
+		justify-content: center;
 
 
 

@@ -92,14 +92,16 @@
             <div class="main-box__currency-from">
 
 
-                <label for="currency" class="main-box__label">Choose Currency:</label>
-
-                <select name="currency" id="currency" class="main-box__currency">
-
-                    <option value="aud">Australian Dollar</option>
-                    <option value="gbp">British Pound</option>
-                    <option value="usd">US Dollar</option>
-
+							<label for="currency" class="main-box__label">Choose Currency:</label>
+							
+							<select name="currency" id="currency-out" class="main-box__currency">
+								
+								<option id="aud" value="aud">Australian Dollar</option>
+								<option id="gbp" value="gbp">British Pound</option>
+								<option id="usd" value="usd">US Dollar</option>
+								<option value="php">Philippine Peso</option>
+								<option value="eur">Euro</option>
+								
 
                 </select>
 
@@ -157,11 +159,13 @@
 
                 <label for="currency" class="main-box__label">Choose Currency:</label>
 
-                <select name="currency" id="currency" class="main-box__currency">
+                <select name="currency" id="currency-in" class="main-box__currency">
 
                     <option value="aud">Australian Dollar</option>
                     <option value="gbp">British Pound</option>
                     <option value="usd">US Dollar</option>
+                    <option value="php">Philippine Peso</option>
+                    <option value="eur">Euro</option>
 
 
                 </select>
@@ -170,7 +174,7 @@
 
 
 
-            <button class="main-box__to--btn">Click to convert</button>
+            <button class="btn_convert main-box__to--btn">Click to convert</button>
 
         </div>
 
@@ -197,7 +201,7 @@
 
 
 
-
+<script src="script.js"></script>
 
 </body>
 

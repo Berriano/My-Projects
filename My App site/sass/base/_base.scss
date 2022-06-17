@@ -35,7 +35,7 @@ body {
 
 .container {
 
-  max-width: 120rem;
+  max-width: 105rem;
 
   background-color: $-color-grey-light-4;
 
@@ -50,6 +50,8 @@ body {
 
 
   grid-template-columns: repeat(10, minmax(min-content, 12rem));
+
+	justify-content: center;
 
 
 
