@@ -1,0 +1,124 @@
+/*-------------------------------   Base file   ---------------------------------*/
+
+
+*,
+*::before,
+*::after {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+}
+
+
+html {
+
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+}
+
+
+
+body {
+
+  font-family: "lato", sans-serif;
+
+
+
+}
+
+
+.container {
+
+  max-width: 152rem;
+  margin: 4rem auto;
+  display: grid;
+
+  grid-template-columns: minmax(6rem, 1fr) repeat(10, minmax(min-content, 14rem)) minmax(6rem, 1fr);
+
+
+
+
+
+}
+
+
+.heading {
+
+  color: $-color-accent-orange-dark;
+  font-size: $-font-xmed;
+  margin-bottom: $-mgb-med;
+
+
+}
+
+.sub-heading {
+
+  font-size: $-font-lg;
+  margin-bottom: $-mgb-break-med;
+
+
+  &-feature {
+
+    font-size: $-font-lg;
+
+    margin-bottom: 10rem;
+
+  }
+
+}
+
+
+.underline {
+
+  background-image: linear-gradient(transparent 8.4rem, #fbc5c5 50%, #f03e3e 90%, #33e7d6);
+
+}
+
+
+.section__header {
+
+
+  grid-column: 1/-1;
+
+  margin-bottom: $-mgb-sm;
+
+}
+
+
+// .btn,
+// .btn:link,
+// .btn:visited {
+//   height: 5rem;
+
+//   transition: all .2s;
+
+// }
+
+
+// .btn:hover,
+// .btn:active {
+
+
+//   // font-size: $-font-medsm;
+
+//   // padding: 2rem;
+
+
+
+
+
+
+
+// }
+
+// .btn:hover~span:hover {
+
+
+//   font-size: $-font-medsm;
+
+//   padding: 2rem;
+
+// }

@@ -1,0 +1,87 @@
+/*-----------------------------------   Feature   -------------------------------*/
+
+.feature {
+
+
+  grid-column: 3/11;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+
+  column-gap: 2.8rem;
+
+  row-gap: 2.4rem;
+
+  margin-bottom: $-mgb-break-lg;
+
+
+
+
+
+
+  &__box {
+
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-rows: 3rem 10rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
+
+    align-items: center;
+
+    justify-items: center;
+
+    padding: 2rem 0;
+
+
+
+    // box-shadow: $-box-sh-lightest;
+
+  }
+
+
+  &__icon {
+
+    transform: translateY(-6.4rem);
+
+    height: 5.5rem;
+    width: 5.5rem;
+    grid-row: 1/span 2;
+
+    text-shadow: 2px 2px 2px black;
+
+  }
+
+
+
+
+  &__heading {
+
+
+    font-size: $-font-med;
+    letter-spacing: .03rem;
+    justify-self: flex-start;
+
+  }
+
+
+
+  &__text {
+
+    font-size: $-font-medsm;
+
+    margin-bottom: $-mgb-sm;
+
+    color: $-color-secondary;
+
+    line-height: 1.4;
+
+    align-self: start;
+
+
+
+
+  }
+
+}
